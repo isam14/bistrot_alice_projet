@@ -1,8 +1,10 @@
 <?php
 session_start();
-if(!isset($_SESSION['nick'])){
+if($_SESSION['nick'] === "Franck"){
     include('bouton_admin.php');
 };
+
+include('../database/connect_bdd.php');
 ?>
 
 <!doctype html>

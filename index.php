@@ -18,4 +18,6 @@ include('template/default.php');
 include('template/header.php');
 include('template/content_index.php');
 include('template/footer.php');
+
+var_dump($_SESSION['nick']);
 ?>
