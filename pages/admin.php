@@ -16,13 +16,7 @@ $nickPost = $_POST['nick'];
 
 if ($nickPost === $nick && password_verify($_POST['pwd'], $pwd)) {
     $_SESSION['nick'] = $nick;
-    echo $nick;
-    var_dump($_SESSION['nick']);
-    ?>
-
-    <div><h1>lolilol</h1></div>
-    <a href="../index.php">index</a>
-
-<?php } else {
-    ?> <div><h1>Nope</h1></div>
-<?php } ?>
+    include('../template/content_admin.php');
+} else {
+    include('connexion.php');
+} ?>
